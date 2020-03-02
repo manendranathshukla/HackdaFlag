@@ -1,0 +1,35 @@
+
+<html>
+<head>
+<title>Site2</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel = "icon" href ="static/logo.jpeg" type = "image/x-icon">
+</head>
+<body>
+<form action="" method="POST">
+	<!-- 0720f362ac6d3220647bc6a583822c43 -->
+  <div class="imgcontainer">
+    <img src="static/logo.jpeg" alt="Avatar" class="avatar" width="50px",height="50px">
+
+	<h1>#HASH </h1>
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" value="admin">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" value="{{
+          request.form.psw }}" required>
+
+    <button type="submit">Get the Flag</button>
+  </div>
+	{% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+      {% endif %}
+</form>
+
+
+<h2>Developed By:Manendra Nath Shukla</h2>
+</body>
+</html>

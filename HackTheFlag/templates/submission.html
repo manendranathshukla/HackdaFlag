@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+<title>Paste your Flags</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+
+<script type="text/javascript">
+function clearField() {
+   if(document.getElementById) {
+      document.chatform.reset();
+   }
+}
+</script>
+
+</head>
+
+<body>
+
+<h2 style="text-align:center;font-size:72px;color:crimson;text-shadow:1px 1px 1px #666;">Paste your Flags</h2>
+<div style="text-align:center;">
+
+
+<form action="" method="POST" name='contact-form'>
+  <div class="container">
+    <label for="vtu"><b>VTU NO:</b></label>
+    <input type="text" placeholder="Enter VTU NO" name="vtu" value="{{ request.form.vtu}}" required autofocus="">
+    <label for="Flag1"><b><h3>Flag1</h3></b></label>
+    <input type="text" placeholder="Enter Flag1" name="f1" value="{{ request.form.f1}}"autofocus="">
+    <!--<button type="submit">Submit Flag1</button>-->
+
+    <label for="psw"><b><h3>Flag2</h3></b></label>
+    <input type="text" placeholder="Enter Flag2" name="f2" value="{{
+          request.form.f2 }}" autofocus="">
+    
+
+    <!--<button type="submit">Submit Flag2</button>-->
+
+
+    <label for="Flag3"><b><h3>Flag3</h3></b></label>
+    <input type="text" placeholder="Enter Flag3" name="f3" value="{{ request.form.f3}}" autofocus="">
+    <!--<button type="submit">Submit Flag3</button>-->
+
+    <label for="Flag1"><b><h3>Flag4</h3></b></label>
+    <input type="text" placeholder="Enter Flag4" name="f4" value="{{ request.form.f4}}" autofocus="">
+    <!--<button type="submit">Submit Flag4</button>-->
+
+    <label for="Flag1"><b><h3>Flag5</h3></b></label>
+    <input type="text" placeholder="Enter Flag5" name="f5" value="{{ request.form.f5}}" autofocus="">
+    <button type="Submit" onclick="clearField()">Submit</button>
+   
+
+  </div>
+
+</div>
+
+</form>
+</html>
